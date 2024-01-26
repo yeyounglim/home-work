@@ -52,7 +52,7 @@
 
 ### Servlet Lifecycle
 
-![image](https://github.com/yeyounglim/home-work/assets/91828757/89bd4465-eed7-4ec3-838f-dca0e6931f53)
+![](https://i.imgur.com/IxL9E29.png)
 
 ### 서블릿 실행 순서
 
@@ -102,7 +102,7 @@
 - `web.xml` 파일 이나 `@WebServlet` 어노테이션을 통해 접근 가능
 
 
-![image](https://github.com/yeyounglim/home-work/assets/91828757/c838313c-5df6-4036-af70-d58f897a4b48)
+![](https://i.imgur.com/xV2Y8f8.png)
 
 ### DispatcherServlet 실행 과정
 
@@ -131,8 +131,8 @@
 
 ### Filter/Interceptor/AOP
 
-![image](https://github.com/yeyounglim/home-work/assets/91828757/df79fc82-1d51-47f7-a259-f82fcf28761d)
-![image](https://github.com/yeyounglim/home-work/assets/91828757/b51a5e5f-b3c4-4549-affc-3c37dc763e47)
+![](https://i.imgur.com/OBjK3RN.png)
+![](https://i.imgur.com/iYb6nUT.png)
 **Filter(필터)**
 
 - 주소로 대상 지정
