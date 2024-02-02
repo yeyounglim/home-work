@@ -47,19 +47,4 @@ public class LocalCacheService {
         }
         return returnVal;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        LocalCacheService that = (LocalCacheService) o;
-
-        return Objects.equals(memberService, that.memberService);
-    }
-
-    @Override
-    public int hashCode() {
-        return memberService != null ? memberService.hashCode() : 0;
-    }
 }
