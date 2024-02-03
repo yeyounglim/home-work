@@ -20,9 +20,9 @@ public class LocalCacheService {
     /*
     * 캐시에서 데이터 가져오기.
     * */
-    public Object getData(String key, String refreshKey) {
+    public <T> T getData(String key, String refreshKey) {
         // 캐시에서 데이터 가져오기
-        Object cachedData = readCache(key);
+        T cachedData = readCache(key);
         // 캐시 데이터 변경여부,, 회원 등록하면 캐시변경여부 true
         boolean refresh = (readCache(refreshKey) == null) ? false : (boolean) readCache(refreshKey);
 
@@ -39,11 +39,11 @@ public class LocalCacheService {
     /*
     * DB에서 가져오기
     * */
-    private Object getDatabase(String cacheKey) {
-        Object returnVal = null;
+    private <T> T getDatabase(String cacheKey) {
+        T returnVal = null;
         // 캐시에서 데이터 없을때 조회해 오기(점점 산으로 가는 기분,,)
         if("totCnt".equals(cacheKey)){  //
-            returnVal = memberService.totalCnt();
+            returnVal = (T) memberService.totalCnt();
         }
         return returnVal;
     }

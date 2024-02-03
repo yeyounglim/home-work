@@ -7,8 +7,8 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component // SpringConfig에서 직접 등록해주려다가 실패...,
 public class LocalCache {
     private static final ConcurrentHashMap<String, Object> cache = new ConcurrentHashMap<>();
-    public static Object readCache(String cacheKey){
-        return cache.get(cacheKey); //캐시 읽어오기
+    public static <T> T readCache(String cacheKey){
+        return (T) cache.get(cacheKey); //캐시 읽어오기
     }
 
     public static void writeCache(String cacheKey, Object cacheVal){
